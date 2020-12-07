@@ -7,5 +7,3 @@ class Calculator:
 
 class Record:
     pass
-
-niiiiiickckccknikckc
