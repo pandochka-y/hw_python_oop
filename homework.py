@@ -47,9 +47,23 @@ class CashCalculator(Calculator):
             'usd': (USD_RATE, 'USD'),
             'euro': (EURO_RATE, 'EURO'),
             'rub': (RUB_RATE, 'руб'),
-            }
+    }
 
-    def get_today_cash_remained(currency):
+    def get_today_cash_remained(self, currency):
+        today_stats = self.get_today_stats
+        limit = self.limit
+        dict = CashCalculator.currencies
+        for cur in dict:
+            if cur == currency:
+                for i in dict[cur].split():
+                    count_cur = today_stats/dict[cur].split[1]
+
+                    if count_cur < (limit/dict[cur].split[1]):
+                        print(f'На сегодня осталось {count_cur} {dict[cur].split[2]}')
+
+                    elif count < (limi)
+        
+#ыплит в словаре не работает, обдумать!!!!
         
     
 
